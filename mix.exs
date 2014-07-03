@@ -18,6 +18,7 @@ defmodule ElixirDynamoCms.Mixfile do
 
   defp deps do
     [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo" } ]
+      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo" },
+      { :markdown, github: "devinus/markdown" } ]
   end
 end
