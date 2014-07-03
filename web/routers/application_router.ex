@@ -11,6 +11,7 @@ defmodule ApplicationRouter do
   # forward "/posts", to: PostsRouter
 
   get "/" do
+    conn = conn.assign(:article_list, ElixirDynamoCms.Dynamo.config[:article][:paths])
     render conn, "index.html"
   end
 

@@ -22,6 +22,8 @@ defmodule ElixirDynamoCms.Dynamo do
   #     [ key: "_elixir_dynamo_cms_session",
   #       secret: "tlGPlcAmV/zdMY7luZDtrEmtr0zdD404uGK0EaUq3dF/UAOdLzx/S2T0j//tyhB+"]
 
+  config :article, paths: Path.wildcard("articles/**/*.md")
+
   # Default functionality available in templates
   templates do
     use Dynamo.Helpers
