@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title><%= content_for(:title) %></title>
+  <title><%= @title %></title>
   <link rel="shortcut icon" href="/static/favicon.ico" />
 </head>
 <body>
